@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'PowerTools::Upload::Blob',
     VERSION_FROM      => 'lib/PowerTools/Upload/Blob.pm', # finds $VERSION
-    PREREQ_PM         => {DBI}, # e.g., Module::Name => 1.1
+    PREREQ_PM         => {DBI,File::Scan::ClamAV}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (AUTHOR         => 'Piotr Ginalski <office@gbshouse.com>') : ()),
 );
