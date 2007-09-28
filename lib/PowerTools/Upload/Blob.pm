@@ -1,6 +1,6 @@
 package PowerTools::Upload::Blob;
 
-use 5.008008;
+use 5.000005;
 use strict;
 use warnings;
 use DBI;
@@ -27,13 +27,13 @@ our @EXPORT = qw(
 	upload
 );
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 # Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
-PowerTools::Upload::File - Additional Perl tool for Apache::ASP data uploading
+PowerTools::Upload::Blob - Additional Perl tool for Apache::ASP data uploading
 
 =head1 SYNOPSIS
 
@@ -50,7 +50,7 @@ PowerTools::Upload::File - Additional Perl tool for Apache::ASP data uploading
 
 	.asp file
 
-	use PowerTools::Upload::File;
+	use PowerTools::Upload::Blob;
 
 	my $up = PowerTools::Upload::File->new(			# Create new object
 		path => 'E:/instale/test', 			# Path to directory where files will be stored (default: '/tmp')
